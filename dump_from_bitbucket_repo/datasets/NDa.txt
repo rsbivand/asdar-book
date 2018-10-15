@@ -1,0 +1,4 @@
+North Derbyshire asthma study: the data has been studied by Diggle and
+Rowlingson (1994), Singleton et al. (1995), and Diggle (2003); the data
+are made available in anonymised form by permission from Peter Diggle
+as shapefiles in a zip archive on the book website.

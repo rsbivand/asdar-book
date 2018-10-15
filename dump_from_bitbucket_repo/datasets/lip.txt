@@ -1,0 +1,2 @@
+Scottish lip cancer: Shapefile and data file downloaded from the book website
+of Waller and Gotway (2004), <a href="http://web1.sph.emory.edu/users/lwaller/WGindex.htm">http://web1.sph.emory.edu/users/lwaller/WGindex.htm</a>, Chaps. 2 and 9.

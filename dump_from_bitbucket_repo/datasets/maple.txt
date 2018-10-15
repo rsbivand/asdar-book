@@ -1,0 +1,1 @@
+Lansing Woods maple trees: available as <pre>data(lansing)</pre> from <b>spatstat</b>, documented in Gerard (1969).

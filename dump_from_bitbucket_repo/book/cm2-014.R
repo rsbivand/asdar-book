@@ -1,0 +1,18 @@
+oopar <- par(mar=c(2,1,2,1)+0.1, mfrow=c(2,2))
+plot(auck_gshhs)
+plot(polygon_random, add=TRUE, cex=0.15)
+title(main="polygon_random")
+plot(grid_random, cex=0.15)
+title(main="grid_random")
+plot(grid_regular, cex=0.15)
+title(main="grid_regular")
+plot(ecdf(transect_el1$band1), verticals=TRUE, do.p=FALSE, ann=FALSE, col.hor="grey", col.vert="grey")
+title(main="ECDF")
+plot(ecdf(polygon_random_el1$band1), verticals=TRUE, do.p=FALSE, add=TRUE)
+plot(ecdf(grid_random_el1$band1), verticals=TRUE, do.p=FALSE, add=TRUE)
+plot(ecdf(grid_regular_el1$band1), verticals=TRUE, do.p=FALSE, add=TRUE)
+abline(h=c(0.25,0.5,0.75), lty=2, col="grey")
+legend(c(350,650), c(0,0.2), c("transect", "samples"), lty=c(1,1), col=c("grey", "black"), bty="n")
+par(oopar)
+
+

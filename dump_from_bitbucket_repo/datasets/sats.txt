@@ -1,0 +1,5 @@
+US 1999 SAT scores: state boundaries available in the 'state' database
+provided by <b>maps</b>, original attribute data downloaded on 2 November
+2005 from <a href="http://www.biostat.umn.edu/~melanie/Data/">http://www.biostat.umn.edu/~melanie/Data/</a> and supplemented
+with variable names and state names; the data set is also available
+from the website of Banerjee et al. (2004), <a href="http://www.biostat.umn.edu/~brad/data/state-sat.dat">http://www.biostat.umn.edu/~brad/data/state-sat.dat</a>.

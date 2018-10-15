@@ -1,0 +1,1 @@
+Biological cell centres: available as <pre>data(cells)</pre> from <b>spatstat</b>, documented in Ripley (1977).

@@ -1,0 +1,5 @@
+Page 365: EFFIS 2011 forest fire dataset - 1769 fire locations in the period
+from 2011-01-22 to 2011-12-16, downloaded using WFS on 2012-01-04 from
+WFS:http://geohub.jrc.ec.europa.eu/effis/ows; saved as shapefile fires_120104
+and interaction data with the WFS server in geohub.RData.
+<br>

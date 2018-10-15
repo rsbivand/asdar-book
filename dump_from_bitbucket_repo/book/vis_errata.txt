@@ -1,0 +1,5 @@
+Page 58: Changes in class definitions and image methods led to the bottom right panel of Figure 3.1 being wrongly plotted. The code in vis_mod.R has been updated to correct the problem reported by ZhiJie Zhang.
+Page 59: Top of page - from sp version 0.9-66, Lines objects must be give a
+valid ID; changed to m.sl <- SpatialLines(list(Lines(list(Line(cc)), "1"))).
+Page 71: The code for Figure 3.11, first panel, as published on the website was broken in the sp package 0.9-29 update, which forced colour regions for factors to have the same number of values as the number of levels in the factor. The vis_mod.R file has been changed and now runs with earlier and current sp package versions.
+Page 74-75: From sp 1.1-0, overlay is defunct and over methods must be used. The code in vis_mod.R has been updated to correct the problem.

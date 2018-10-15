@@ -1,0 +1,1 @@
+California redwood trees: available as <pre>data(redwoodfull)</pre> from <b>spatstat</b>, documented in Strauss (1975).

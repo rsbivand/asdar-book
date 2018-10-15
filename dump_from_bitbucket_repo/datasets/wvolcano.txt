@@ -1,0 +1,2 @@
+World volcano locations: downloaded from the National Geophysical Data
+Center <a href="http://www.ngdc.noaa.gov/hazard/volcano.shtml">http://www.ngdc.noaa.gov/hazard/volcano.shtml</a>.

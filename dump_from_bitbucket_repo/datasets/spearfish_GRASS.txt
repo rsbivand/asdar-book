@@ -1,0 +1,2 @@
+R should be started within GRASS, in the Spearfish LOCATION, in a writable MAPSET. The bundle contains a single file of R code.
+

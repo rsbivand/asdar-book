@@ -1,0 +1,6 @@
+The collection of files in the zip archive is organised in a directory called Arc. It includes a Syracuse shapefile constructed after sourcing lat1_mod.R as recorded in Syracuse.Rhistory. The main Python file lat1_Arc_nb.py has been checked on ArcGIS 9.1 and its corresponding Python 2.1, and sources the R file coverage2nb.R. 
+
+The process as presented in lat1_Arc_nb.py is to start a geoprocessor, to convert the shapefile into a coverage, to start R, to read the coverage into R in PAL and ARC representations, to check the polygon identities in case multiple geometries belong to one object, and to call coverage2nb on the ID values and the ARC representation.
+
+The R code in the Python script can also be run from the R side directly if the coverage already exists.
+

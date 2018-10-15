@@ -1,0 +1,2 @@
+Auckland shoreline: downloaded on 7 November 2005 from the National
+Geophysical Data Center coastline extractor <a href="http://www.ngdc.noaa.gov/mgg/shorelines/shorelines.html">http://www.ngdc.noaa.gov/mgg/shorelines/shorelines.html</a>.

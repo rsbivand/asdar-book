@@ -1,0 +1,5 @@
+North Carolina SIDS: shapefile sids.shp (based on geometries downloaded
+from <a href="http://sal.agecon.uiuc.edu/datasets/sids.zip">http://sal.agecon.uiuc.edu/datasets/sids.zip</a>) and GAL format
+neighbour lists ncCC89.gal and ncCR85.gal distributed with <b>spdep</b>,
+data from Cressie (1993), neighbour lists from Cressie and Chan (1989)
+and Cressie and Read (1985), documented in the nc.sids help page.

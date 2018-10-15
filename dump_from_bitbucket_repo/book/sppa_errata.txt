@@ -1,0 +1,10 @@
+Page 161, chunk 19: Changes in spatstat 1.45-0 enforce a tighter spacing of the r vector, changed in code from by = 0.005 to by = 0.001
+
+Pages 161, 162 and 172: The code lines in cbind() giving name DATASET should give name y; downloadable code updated.
+
+Page 169: The adapt package has been replaced by the cubature package for
+license reasons; changes applied to online chapter code.
+
+Page 176: From sp 1.1-0, overlay is defunct and over methods must be used. The code in sppa_mod.R has been updated to correct the problem.
+
+Page 181: For mgcv version 1.5-2 only, Spatial*DataFrame objects cannot be used as values for the gam() data= argument - coerce to data.frame first.

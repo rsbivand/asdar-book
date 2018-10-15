@@ -1,0 +1,1 @@
+Maunga Whau volcano: available as <pre>data(volcano)</pre> from <b>datasets</b>.

@@ -1,0 +1,4 @@
+US Census 1990 Counties: Three shapefiles for Virginia and North and South
+Carolina downloaded from the US Census Bureau cartographic boundary
+files site for 1990 county and county equivalent areas at <a href="http://www.census.gov/geo/www/cob/co1990.html">http://www.census.gov/geo/www/cob/co1990.html</a>; one text file by county defining
+metropolitan area membership also from the USCensus Bureau site <a href="http://blueprod.ssd.census.gov/population/estimates/metro-city/90mfips.txt">http://blueprod.ssd.census.gov/population/estimates/metro-city/90mfips.txt</a>.

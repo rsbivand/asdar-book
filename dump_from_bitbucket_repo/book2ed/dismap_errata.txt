@@ -1,0 +1,18 @@
+Page 336: chunk 38: From CARBayes 3.0, the function name changes to
+independent.re; dismap_mod.R has been modified to work with 3.0. Further
+changes in CARBayes 4.0, function name to S.independent; dismap_mod.R 
+has been modified to work with 4.0. In CARBayes 4.4, the S.independent has been withdrawn.
+Page 344: chunk 63: From CARBayes 3.0, the function name changes to
+bymCAR.re; dismap_mod.R has been modified to work with 3.0. Further
+changes in CARBayes 4.0, function name to S.CARbym; dismap_mod.R 
+has been modified to work with 4.0. From CARBayes 4.2, the acceptance 
+thresholds (hardcoded in code in that package) were changed, leading to 
+different results; the format of the output also changed.
+Pages 344-346: chunk 67: Updating from R2BayesX 0.1-2 to 0.3-1 changes the
+names of components of the returned objects; dismap_mod.R has been modified to
+work with older and current versions of the package. 
+Page 347: chunk 72 commented out to handle temporary issue between BayesX and akima; no code run for Fig. 10.20.
+Pages 357-359: chunk 93: the code creating figure 10.23 failed on 2016-02-29, as this was the first leap year day encountered - dismap_mod.R has been modified to avoid the problem (next time in four years ...)
+Pages 359-361: chunk 101: Updating from R2BayesX 0.1-2 to 0.3-1 changes the
+names of components of the returned objects; dismap_mod.R has been modified to
+work with older and current versions of the package. 

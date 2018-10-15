@@ -1,0 +1,1 @@
+Japanese black pine saplings: available as <pre>data(japanesepines)</pre> from <b>spatstat</b>, documented in Numata (1961).

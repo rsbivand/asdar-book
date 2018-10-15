@@ -1,0 +1,3 @@
+Meuse bank: available as <pre>data(meuse)</pre> from <b>sp</b>, supplemented by
+<pre>data(meuse.grid)</pre> and <pre>data(meuse.riv)</pre>
+and documented in Rikken and Van Rijn (1993), and Burrough and McDonnell (1998).

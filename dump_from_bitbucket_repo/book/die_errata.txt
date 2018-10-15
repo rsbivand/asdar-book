@@ -1,0 +1,5 @@
+Page 84: URL for Grids & Datums (footnote 10) is now http://www.asprs.org/Grids-Datums.html.
+Page 85: From sp 1.2-4, a bug in the the calculation of great circle distances has been corrected, and the printed distance of 124.0994 should be 124.1372.
+Page 90: footnote 17: http://web1.sph.emory.edu/users/lwaller/WGindex.htm
+Pages 90 and 92: The CRS in the middle of the pages has an omitted + before ellps.
+Pages 97 and 105: From sp 1.1-0, overlay is defunct and over methods must be used. The code in die_mod.R has been updated to correct the problem.

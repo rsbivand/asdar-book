@@ -1,0 +1,4 @@
+New York leukemia: used and documented extensively in Waller and
+Gotway (2004) and with data made available in Chap. 9 of <a href="http://web1.sph.emory.edu/users/lwaller/WGindex.htm">http://web1.sph.emory.edu/users/lwaller/WGindex.htm</a>; the data import process is
+described in the help file of NY_data in <b>spdep</b>; geometries downloaded
+from the CIESIN server at ftp.ciesin.columbia.edu, file <a href="ftp://ftp.ciesin.columbia.edu/pub/census/usa/tiger/ny/bna_st/t8_36.zip">/pub/census/usa/tiger/ny/bna_st/t8_36.zip</a>, and extensively edited.

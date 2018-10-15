@@ -1,0 +1,16 @@
+oopar <- par(mfrow=c(2,2), mar=c(1,1,1,1)+0.1)
+plot(Syracuse, border="grey60")
+plot(Sy4_nb, coords, add=TRUE, pch=".")
+text(bbox(Syracuse)[1,1], bbox(Syracuse)[2,2], labels="a)", cex=0.8)
+plot(Syracuse, border="grey60")
+plot(Sy5_nb, coords, add=TRUE, pch=".")
+text(bbox(Syracuse)[1,1], bbox(Syracuse)[2,2], labels="b)", cex=0.8)
+plot(Syracuse, border="grey60")
+plot(Sy6_nb, coords, add=TRUE, pch=".")
+text(bbox(Syracuse)[1,1], bbox(Syracuse)[2,2], labels="c)", cex=0.8)
+plot(Syracuse, border="grey60")
+plot(Sy7_nb, coords, add=TRUE, pch=".")
+text(bbox(Syracuse)[1,1], bbox(Syracuse)[2,2], labels="d)", cex=0.8)
+par(oopar)
+
+

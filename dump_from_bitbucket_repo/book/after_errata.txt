@@ -1,0 +1,1 @@
+Page 344: The version of the splancs package used for building the book was 2.01-24, not 2.01-23 - this affects Figure 7.10 on page 177, which cannot be reproduced with the earlier version.

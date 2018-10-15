@@ -1,0 +1,22 @@
+Page 88-89: From sp 1.2-4, a bug in the the calculation of great circle distances has been corrected, and the printed distance of 124.0994 should be 124.1372 and equivalently 125.8692 should be 125.9068.
+Page 93: footnote 16: http://www.sph.emory.edu/~lwaller/WGindex.htm changed to http://web1.sph.emory.edu/users/lwaller/WGindex.htm. <br>
+Page 94: From rgdal 1.2.* and GDAL 2, integer values read from ESRI Shapefiles and specified with wide fields are treated as 64-bit integers. This breaks earlier assumptions, so that from rgdal 1.2.*, the readOGR() integer64= argument is changed from default "allow.loss" to "no.loss", returning a string value rather than an integer (or in some settings a double value). In this case, "allow.loss" returning an R 32-bit signed integer is the intended behaviour.<br>
+Page 97: Access to the EFFIS WFS server has been terminated (WMS appears to
+continue at http://forest.jrc.ec.europa.eu/effis/applications/data-and-services/). The data are provided as an R object (layer names) and a shapefile in the Chapter bundle.<br>
+Page 98, chunk 58: after updating to spacetime 1.0-6, the stplot command has
+changed its arguments, and the dispatching object should be cast to STI from
+STIDF: stplot(as(Fires2, "STI"), number=3, sp.layout=spl, cex=0.5).<br>
+Page 108, chunks 98-100: If you run the commented-out code in chunk 99 (bug
+reported by Manfred Jensen), you need to re-import the image in banded rather 
+than native form, following changes in the RgoogleMaps package, adding:
+<pre>
+myMap$myTile <- readPNG("MyTile2.png", native=FALSE)
+</pre><br>
+Page 120, chunk 139: To correct errors in brackets, the lines in the middle of 
+the code chunk at the foot of the page should read:<br>
+<pre>
+> crs <- CRS(proj4string(vsnow4buf))
+> SGDF <- SpatialGridDataFrame(GRD, proj4string=crs,
++ data=data.frame(o=o))
+</pre>
+<br>

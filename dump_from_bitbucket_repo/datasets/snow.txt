@@ -1,0 +1,4 @@
+Broad Street cholera mortalities: original files provided by Jim Detwiler,
+who had collated them for David O'Sullivan for use on the cover of
+O'Sullivan and Unwin (2003), based on earlier work by Waldo Tobler and
+others; this version is available as a compressed archive of a <a href="datasets/snow_location.tgz">GRASS location</a>, and a <a href="datasets/snow_files.zip">collection</a> of GeoTiff and shapefiles exported from this location.

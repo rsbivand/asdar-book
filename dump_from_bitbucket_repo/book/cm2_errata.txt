@@ -1,0 +1,4 @@
+Sections 5.4 and 5.5: The files for download from the US Census bondaries site
+are now provided locally in the chapter bundle, as the URL and available files
+for download have changed.
+Pages 116 and 118: From sp 1.1-0, overlay is defunct and over methods must be used. The code in cm2_mod.R has been updated to correct the problem.

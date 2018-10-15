@@ -1,0 +1,2 @@
+Page 180, chunk 19: Changes in spatstat 1.45-0 enforce a tighter spacing of the r vector, changed in code from by = 0.005 to by = 0.001
+Page 186: Changes in spatstat::bw.diggle() between versions 1.41-1 and 1.42-1 appear to have made a small change to the value returned.

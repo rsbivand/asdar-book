@@ -1,0 +1,21 @@
+Page 32: The book was built with sp version 0.9-24. From sp version 0.9-29,
+rownames on the input matrix of coordinates if they are present are preserved
+in SpatialPoints objects, and are displayed when the coordinates are printed.
+This changes the appearance of the tabulation of the coordinates subset in
+the middle of the page. Thanks to Mic Jackson for reporting the change.
+<br>
+Page 39: The line of code "library(maptools)" in the central code chunk is not
+visible and should be. Thanks to Jerry Davis for reporting the omission.
+<br>
+Page 43: Between mid December 2009 and the release of sp version 0.9-61 in
+March 2010 (sp releases 0.9-56, 0.9-57, 0.9-59, 0.9-60), a function
+introduced in R 2.9.1 (anyDuplicates) was used without version protection.
+This means that for those sp versions and R < 2.9.1, the SpatialPolygon
+construction code at the foot of the page (and elsewhere) did not run. Either
+return to sp version 0.9-52, or upgrade R to 2.9.1 or later. Thanks to 
+Larry Winner and a participant on a course in Toulouse for reporting the
+problem.
+<br>
+Page 45: Sometime during 2010, the book code and the downloadable code diverged as a response to changes in sp. The changes had the effect of removing the previous behaviour of automatically subsetting data.frames to match Polygons objects, and the second sentence on the page should now read: "Here, we subset to the matched rows of the data frame, to ensure that one row corresponds to each Polygons object:". Thanks to Alex Bigazzi for reporting the problem.
+<br>
+Pages 49-52: From sp version 0.9-94 (January 2012), the class definition of SpatialGrid objects loses "coords" and "grid.index" slots.

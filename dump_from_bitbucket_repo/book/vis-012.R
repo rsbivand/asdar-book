@@ -1,0 +1,30 @@
+def.par <- par(no.readonly = TRUE)
+oldpar = par(mar = c(0,0,1,0))
+library(sp)
+data(meuse)
+coordinates(meuse) = c("x", "y")
+layout(matrix(1:4, 2, 2, byrow = TRUE))
+par(mar = c(0,0,1,0))
+plot(meuse, cex = 0.6)
+title("points")
+
+cc = coordinates(meuse)
+m.sl = SpatialLines(list(Lines(list(Line(cc)), "mess")))
+plot(m.sl)
+title("lines")
+
+data(meuse.riv)
+meuse.lst = list(Polygons(list(Polygon(meuse.riv)), "meuse.riv")) 
+meuse.sr = SpatialPolygons(meuse.lst)
+plot(meuse.sr, col = "grey")
+title("polygons")
+
+data(meuse.grid)
+coordinates(meuse.grid) = c("x", "y")
+meuse.grid <- as(meuse.grid, "SpatialPixels")
+image(meuse.grid, col = "grey")
+title("grid")
+par(def.par)
+cat("\n")
+
+

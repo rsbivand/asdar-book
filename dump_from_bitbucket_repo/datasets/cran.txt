@@ -1,0 +1,1 @@
+CRAN mirrors: locations of CRAN mirrors 1 October 2005.

@@ -1,0 +1,1 @@
+R should be started from inside GRASS, preferably in a location suited to the NY eight county data set. The R script reads the eight county shapefile into R, subsets to Syracuse, exports the Syracuse polygons object to GRASS, and uses the output of the GRASS topology building and cleaning process to find the rook neighbours.

@@ -1,0 +1,1 @@
+Auckland 90m Shuttle Radar Topography Mission: downloaded on 26 September 2006 from the US Geological Survey, National Map Seamless Server <a href="http://seamless.usgs.gov/">http://seamless.usgs.gov/</a>, GeoTiff file, 3 arcsec 'Finished' (90 m) data.

@@ -1,0 +1,2 @@
+R should be started within GRASS, in the <a href="datasets/snow_location.tgz">snow</a> LOCATION, which may be downloaded and uncompressed, in a writable MAPSET. The bundle contains a single file of R code, and legend_image.R from the geoR package.
+

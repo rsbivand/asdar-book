@@ -1,0 +1,1 @@
+The bundle of files includes an R file plus two text files with the WinBUGS models. The R file will download dismap_mod.R and run it at the beginning to have all the data set up. THe R file also contains a comment at the beginning to set two variables according to the local installation of WinBUGS and Wine, which should be enough for all users.

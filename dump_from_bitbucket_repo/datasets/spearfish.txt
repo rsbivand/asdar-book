@@ -1,0 +1,3 @@
+Spearfish: downloaded as GRASS location from <a href="http://grass.itc.it/sampledata/spearfish_grass60data-0.3.tar.gz">http://grass.itc.it/sampledata/spearfish_grass60data-0.3.tar.gz</a>; this data set has been
+the standard GRASS location for tutorials and is documented in Neteler
+and Mitasova (2004).
