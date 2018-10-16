@@ -31,6 +31,7 @@ the code chunk at the foot of the page should read:<br>
 + data=data.frame(o=o))
 </pre>
 <br>
+
 ## cm2
 Section 5.3.3, foot of page 147, code chunk 72, tabulation of five number summaries. Because over() now returns a data frame, the coordinates method fails for extracting the number of data objects returned; corrected in <a href=http://www.asdar-book.org/book2ed/cm2_mod.R>cm2_mod.R</a>.
 Page 143, Chunk 57: maptools should be loaded explicitly.
