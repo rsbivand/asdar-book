@@ -86,3 +86,8 @@ for (i in chapters) {
   source(fn, echo = TRUE)
 }
 ```
+
+### Errata
+
+* Errata to the [second edition](book2ed_errata.html)
+* Errata to the [first edition](book_errata.html)
