@@ -4,3 +4,5 @@ description: Web site with book resources (data, scripts)
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+gems:
+- jekyll-seo-tag

@@ -2,7 +2,9 @@
 layout: default
 ---
 
-### Data sets
+This web site contains scripts and datasets to reproduce all the examples in _Applied Spatial Data Analysis with R, second edition_, by Roger Bivand, Edzer Pebesma and Virgilio Gomez-Rubio.
+
+### Data sets and scripts
 
 Data set bundles (.zip files for all datasets occuring in a chapter of the book), for chapter
 [1](/bundles2ed/hello_bundle.zip),
@@ -16,7 +18,7 @@ Data set bundles (.zip files for all datasets occuring in a chapter of the book)
 [9](/bundles2ed/lat_bundle.zip),
 [10](/bundles2ed/dismap_bundle.zip).
 
-Verbatim book scripts, for chapter
+Verbatim (unchanged) book scripts, for chapter
 [1](/book2ed/hello.R),
 [2](/book2ed/cm.R),
 [3](/book2ed/vis.R),
@@ -39,3 +41,27 @@ Updated and simplifed book scripts, for chapter
 [8](/book2ed/geos_mod.R),
 [9](/book2ed/lat_mod.R),
 [10](/book2ed/dismap_mod.R).
+
+### Reproducing the whole book
+
+A script that downloads all scripts is:
+```
+ASDAR_BOOK <- "http://www.asdar-book.org/book2ed"
+chapters <- c("hello", "cm", "vis", "die", "cm2",
+"std", "sppa", "geos", "lat", "dismap")
+for (i in chapters) {
+  fn <- paste(i, "mod.R", sep="_")
+  download.file(paste(ASDAR_BOOK, fn, sep = "/"), fn)
+}
+```
+
+A script that downloads all data and scripts, and reproduces the whole book is:
+```
+ASDAR_BOOK <- "http://edzer.github.io/asdar-book/book2ed"
+chapters <- c("hello", "cm", "vis", "die", "cm2",
+"std", "sppa", "geos", "lat", "dismap")
+for (i in chapters) {
+  fn <- paste(i, "mod.R", sep="_")
+  download.file(paste(ASDAR_BOOK, fn, sep = "/"), fn)
+}
+```
