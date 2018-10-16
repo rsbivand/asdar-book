@@ -33,7 +33,7 @@ the code chunk at the foot of the page should read:<br>
 <br>
 
 ## cm2
-Section 5.3.3, foot of page 147, code chunk 72, tabulation of five number summaries. Because over() now returns a data frame, the coordinates method fails for extracting the number of data objects returned; corrected in <a href=http://www.asdar-book.org/book2ed/cm2_mod.R>cm2_mod.R</a>.
+Section 5.3.3, foot of page 147, code chunk 72, tabulation of five number summaries. Because over() now returns a data frame, the coordinates method fails for extracting the number of data objects returned; corrected in cm2_mod.R.
 Page 143, Chunk 57: maptools should be loaded explicitly.
 Page 145-146: From version 2.3-0 of raster (released 6 September 2014), the argument small=FALSE should be added to match the over method in sp; before 2.3-0, the default was FALSE, but was changed to TRUE at this release.
 ## std
