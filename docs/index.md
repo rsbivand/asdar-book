@@ -46,7 +46,8 @@ Updated and simplifed book scripts, for chapter
 
 A script that downloads all scripts is:
 ```
-ASDAR_BOOK <- "http://www.asdar-book.org/book2ed"
+# ASDAR_BOOK <- "http://www.asdar-book.org/book2ed"
+ASDAR_BOOK <- "http://edzer.github.io/asdar-book/book2ed"
 chapters <- c("hello", "cm", "vis", "die", "cm2",
 "std", "sppa", "geos", "lat", "dismap")
 for (i in chapters) {
@@ -55,13 +56,33 @@ for (i in chapters) {
 }
 ```
 
-A script that downloads all data and scripts, and reproduces the whole book is:
+To run all examples of the book, a number of packages need to be installed. Running the following script will install those that are not already present:
 ```
-ASDAR_BOOK <- "http://edzer.github.io/asdar-book/book2ed"
+pkgs <- c("boot", "CARBayes", "classInt", "coda", "cubature",
+"DCluster", "deldir", "epitools", "geoR", "ggplot2", "gstat",
+"INLA", "lattice", "latticeExtra", "lmtest", "maps", "maptools",
+"MASS", "McSpatial", "mgcv", "nlme", "osmar", "pgirmess", "plm",
+"R2BayesX", "R2WinBUGS", "raster", "RColorBrewer", "rgdal", "rgeos",
+"sandwich", "sp", "spacetime", "spatstat", "spdep", "spgwr", "sphet",
+"splancs", "xts")
+
+for (p in pkgs) {
+	if (inherits(try(library(p, character.only = TRUE)), "try-error"))
+		install.packages(p, character.only = TRUE)
+}
+```
+
+A script that downloads all data and scripts, extracts data, and reproduces the whole book is:
+```
 chapters <- c("hello", "cm", "vis", "die", "cm2",
 "std", "sppa", "geos", "lat", "dismap")
 for (i in chapters) {
+  ASDAR_BOOK <- "http://edzer.github.io/asdar-book"
   fn <- paste(i, "mod.R", sep="_")
-  download.file(paste(ASDAR_BOOK, fn, sep = "/"), fn)
+  download.file(paste(ASDAR_BOOK, "book2ed", fn, sep = "/"), fn)
+  da <- paste(i, "bundle.zip", sep = "_")
+  download.file(paste(ASDAR_BOOK, "bundles2ed", da, sep = "/"), da)
+  unzip(da)
+  source(fn, echo = TRUE)
 }
 ```
