@@ -1,0 +1,3 @@
+$ crontab -l
+15 1 * * *      $HOME/proj/other/book/tests2ed/run_tests.sh 2>&1 > $HOME/proj/other/book/tests2ed/run.log
+15 0 * * *      $HOME/proj/other/book/tests/run_tests.sh 2>&1 > $HOME/proj/other/book/tests/run.log
