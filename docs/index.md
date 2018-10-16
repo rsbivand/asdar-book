@@ -2,122 +2,40 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+### Data sets
 
-[Link to another page](./another-page.html).
+Data set bundles (.zip files for all datasets occuring in a chapter of the book), for chapter
+[1](/bundles2ed/hello_bundle.zip),
+[2](/bundles2ed/cm_bundle.zip),
+[3](/bundles2ed/vis_bundle.zip),
+[4](/bundles2ed/die_bundle.zip),
+[5](/bundles2ed/cm2_bundle.zip),
+[6](/bundles2ed/std_bundle.zip),
+[7](/bundles2ed/sppa_bundle.zip),
+[8](/bundles2ed/geos_bundle.zip),
+[9](/bundles2ed/lat_bundle.zip),
+[10](/bundles2ed/dismap_bundle.zip).
 
-There should be whitespace between paragraphs.
+Verbatim book scripts, for chapter
+[1](/book2ed/hello.R),
+[2](/book2ed/cm.R),
+[3](/book2ed/vis.R),
+[4](/book2ed/die.R),
+[5](/book2ed/cm2.R),
+[6](/book2ed/std.R),
+[7](/book2ed/sppa.R),
+[8](/book2ed/geos.R),
+[9](/book2ed/lat.R),
+[10](/book2ed/dismap.R).
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Updated and simplifed book scripts, for chapter
+[1](/book2ed/hello_mod.R),
+[2](/book2ed/cm_mod.R),
+[3](/book2ed/vis_mod.R),
+[4](/book2ed/die_mod.R),
+[5](/book2ed/cm2_mod.R),
+[6](/book2ed/std_mod.R),
+[7](/book2ed/sppa_mod.R),
+[8](/book2ed/geos_mod.R),
+[9](/book2ed/lat_mod.R),
+[10](/book2ed/dismap_mod.R).
