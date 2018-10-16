@@ -43,16 +43,7 @@ Pages 116 and 118: From sp 1.1-0, overlay is defunct and over methods must be us
 ## csdacm
 Pages 137-140: From sp 1.1-0, overlay is defunct and over methods must be used. The code in csdacm\_mod.R has been updated to correct the problem.
 ## sppa
-Page 161, chunk 19: Changes in spatstat 1.45-0 enforce a tighter spacing of the r vector, changed in code from by = 0.005 to by = 0.001
-
-Pages 161, 162 and 172: The code lines in cbind() giving name DATASET should give name y; downloadable code updated.
-
-Page 169: The adapt package has been replaced by the cubature package for
-license reasons; changes applied to online chapter code.
-
-Page 176: From sp 1.1-0, overlay is defunct and over methods must be used. The code in sppa\_mod.R has been updated to correct the problem.
-
-Page 181: For mgcv version 1.5-2 only, Spatial\*DataFrame objects cannot be used as values for the gam() data= argument - coerce to data.frame first.
+Page 161, chunk 19: Changes in spatstat 1.45-0 enforce a tighter spacing of the r vector, changed in code from by = 0.005 to by = 0.001. Pages 161, 162 and 172: The code lines in cbind() giving name DATASET should give name y; downloadable code updated. Page 169: The adapt package has been replaced by the cubature package for license reasons; changes applied to online chapter code. Page 176: From sp 1.1-0, overlay is defunct and over methods must be used. The code in sppa\_mod.R has been updated to correct the problem. Page 181: For mgcv version 1.5-2 only, Spatial\*DataFrame objects cannot be used as values for the gam() data= argument - coerce to data.frame first.
 ## geos
 Pages 217 and 229: From sp 1.1-0, overlay is defunct and over methods must be used. The code in geos\_mod.R has been updated to correct the problem.
 Page 218: df constructed wrongly; "it would appear as though the estimate of the intercept is -2.47 and the estimate of beta1 is 6.95.  I wonder if these labels are switched, as a simple lm of log(zinc) on sqrt(dist) has intercept 6.99 and slope -2.54 - there is a negative relationship of log zinc with sqrt(dist)"; thanks to Susan Service. Script updated 30 August 2017.
