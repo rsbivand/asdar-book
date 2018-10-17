@@ -2,7 +2,19 @@
 layout: default
 ---
 
-This web site contains scripts and datasets to reproduce all the examples in _Applied Spatial Data Analysis with R, second edition_, by Roger Bivand, Edzer Pebesma and Virgilio Gomez-Rubio.
+This web site contains scripts and datasets to reproduce all the examples in 
+
+[_Applied Spatial Data Analysis with R_.  Roger S. Bivand, Edzer
+Pebesma and V. Gómez-Rubio UseR! Series, Springer.  2nd ed. 2013,
+xviii+405 pp., Softcover ISBN: 978-1-4614-7617-7](http://www.springer.com/statistics/life+sciences%2C+medicine+%26+health/book/978-1-4614-7617-7)
+
+### Authors
+
+[Roger S. Bivand](https://www.nhh.no/en/employees/faculty/roger-bivand/) is Professor of Geography in the Department of Economics at Norwegian School of Economics, Bergen, Norway.
+
+[Edzer Pebesma](https://www.uni-muenster.de/Geoinformatics/en/institute/staff/index.php/119/edzer_pebesma) is Professor of Geoinformatics at Westfälische Wilhelms-Universität, Münster, Germany.
+
+[Virgilio Gómez-Rubio](https://becarioprecario.github.io/) is Associate Professor in the Department of Mathematics at Universidad de Castilla-La Mancha, Albacete, Spain.
 
 ### Data sets and scripts
 
@@ -91,3 +103,16 @@ for (i in chapters) {
 
 * Errata to the [second edition](book2ed_errata.html)
 * Errata to the [first edition](book_errata.html)
+
+### First edition
+
+The data and scripts of the first edition of the book,
+
+[_Applied Spatial Data Analysis with R_, Roger S. Bivand, Edzer J. Pebesma and V. Gómez-Rubio.  UseR! Series, Springer.  2008, 378 p., Softcover.  ISBN: 978-0-387-78170-9](https://www.springer.com/de/book/9780387781716#otherversion=9780387781709)
+
+is found here:
+
+* [data bundles](https://github.com/edzer/asdar-book/bundles/)
+* [data set source description](https://github.com/edzer/asdar-book/datasets/)
+* [R scripts](https://github.com/edzer/asdar-book/book/)
+
