@@ -1,7 +1,11 @@
 # Errata
+
 ## hello
+
 Page 7: PROJ.4 string requires +ellps from PROJ 4.9.
+
 ## cm
+
 Page 32: The book was built with sp version 0.9-24. From sp version 0.9-29,
 rownames on the input matrix of coordinates if they are present are preserved
 in SpatialPoints objects, and are displayed when the coordinates are printed.
