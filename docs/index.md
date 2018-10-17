@@ -59,7 +59,7 @@ Updated and simplifed book scripts, for chapter
 A script that downloads all scripts is:
 ```
 # ASDAR_BOOK <- "http://www.asdar-book.org/book2ed"
-ASDAR_BOOK <- "http://edzer.github.io/asdar-book/book2ed"
+ASDAR_BOOK <- "http://r-spatial.github.io/asdar-book.org/book2ed"
 chapters <- c("hello", "cm", "vis", "die", "cm2",
 "std", "sppa", "geos", "lat", "dismap")
 for (i in chapters) {
@@ -89,7 +89,7 @@ A script that downloads all data and scripts, extracts data, and reproduces the 
 chapters <- c("hello", "cm", "vis", "die", "cm2",
 "std", "sppa", "geos", "lat", "dismap")
 for (i in chapters) {
-  ASDAR_BOOK <- "http://edzer.github.io/asdar-book"
+  ASDAR_BOOK <- "http://r-spatial.github.io/asdar-book"
   fn <- paste(i, "mod.R", sep="_")
   download.file(paste(ASDAR_BOOK, "book2ed", fn, sep = "/"), fn)
   da <- paste(i, "bundle.zip", sep = "_")
@@ -111,8 +111,8 @@ The data and scripts of the first edition of the book,
 
 are found here:
 
-* [data bundles](https://github.com/edzer/asdar-book/tree/master/docs/bundles/)
-* [data set source description](https://github.com/edzer/asdar-book/tree/master/docs/datasets/)
-* [R scripts](https://github.com/edzer/asdar-book/tree/master/docs/book/)
+* [data bundles](https://github.com/r-spatial/asdar-book.org/tree/master/docs/bundles/)
+* [data set source description](https://github.com/r-spatial.org/asdar-book/tree/master/docs/datasets/)
+* [R scripts](https://github.com/r-spatial/asdar-book.org/tree/master/docs/book/)
 * [Errata to the first edition](book_errata.html)
 
