@@ -101,8 +101,7 @@ for (i in chapters) {
 
 ### Errata
 
-* Errata to the [second edition](book2ed_errata.html)
-* Errata to the [first edition](book_errata.html)
+* Errata to the second edition are found [here](book2ed_errata.html)
 
 ### First edition
 
@@ -115,4 +114,5 @@ are found here:
 * [data bundles](https://github.com/edzer/asdar-book/tree/master/docs/bundles/)
 * [data set source description](https://github.com/edzer/asdar-book/tree/master/docs/datasets/)
 * [R scripts](https://github.com/edzer/asdar-book/tree/master/docs/book/)
+* [Errata to the first edition](book_errata.html)
 
