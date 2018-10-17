@@ -110,9 +110,9 @@ The data and scripts of the first edition of the book,
 
 [_Applied Spatial Data Analysis with R_, Roger S. Bivand, Edzer J. Pebesma and V. Gómez-Rubio.  UseR! Series, Springer.  2008, 378 p., Softcover.  ISBN: 978-0-387-78170-9](https://www.springer.com/de/book/9780387781716#otherversion=9780387781709)
 
-is found here:
+are found here:
 
-* [data bundles](https://github.com/edzer/asdar-book/bundles/)
-* [data set source description](https://github.com/edzer/asdar-book/datasets/)
-* [R scripts](https://github.com/edzer/asdar-book/book/)
+* [data bundles](https://github.com/edzer/asdar-book/tree/master/docs/bundles/)
+* [data set source description](https://github.com/edzer/asdar-book/tree/master/docs/datasets/)
+* [R scripts](https://github.com/edzer/asdar-book/tree/master/docs/book/)
 
