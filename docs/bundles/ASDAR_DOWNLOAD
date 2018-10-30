@@ -1,2 +1,2 @@
-Sys.setenv(ASDAR_DOWNLOAD="https://www.asdar-book.org/RC1/datasets")
+Sys.setenv(ASDAR_DOWNLOAD="http://www.asdar-book.org/RC1/datasets")
 

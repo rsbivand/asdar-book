@@ -25,15 +25,15 @@ winepath<-"/usr/bin/winepath"
 ###################################################
 #Download files
 if(!file.exists("dismap_mod.R")){
-	download.file("https://www.asdar-book.org/book/dismap_mod.R","dismap_mod.R")	
+	download.file("http://www.asdar-book.org/book/dismap_mod.R","dismap_mod.R")	
 }
 
 if(!file.exists("PG-model.txt")){
-	download.file("https://www.asdar-book.org/book/PG-model.txt","PG-model.txt")	
+	download.file("http://www.asdar-book.org/book/PG-model.txt","PG-model.txt")	
 }
 
 if(!file.exists("BYM-model.txt")){
-	download.file("https://www.asdar-book.org/book/BYM-model.txt","BYM-model.txt")	
+	download.file("http://www.asdar-book.org/book/BYM-model.txt","BYM-model.txt")	
 }
 
 #Run 'dismap_mod.R' to get some results and data
