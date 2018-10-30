@@ -58,10 +58,9 @@ Updated and simplifed book scripts, for chapter
 
 A script that downloads all scripts is:
 ```
-# ASDAR_BOOK <- "http://www.asdar-book.org/book2ed"
-ASDAR_BOOK <- "http://r-spatial.github.io/asdar-book.org/book2ed"
+ASDAR_BOOK <- "https://www.asdar-book.org/book2ed"
 chapters <- c("hello", "cm", "vis", "die", "cm2",
-"std", "sppa", "geos", "lat", "dismap")
+  "std", "sppa", "geos", "lat", "dismap")
 for (i in chapters) {
   fn <- paste(i, "mod.R", sep="_")
   download.file(paste(ASDAR_BOOK, fn, sep = "/"), fn)
@@ -89,7 +88,7 @@ A script that downloads all data and scripts, extracts data, and reproduces the 
 chapters <- c("hello", "cm", "vis", "die", "cm2",
 "std", "sppa", "geos", "lat", "dismap")
 for (i in chapters) {
-  ASDAR_BOOK <- "http://r-spatial.github.io/asdar-book"
+  ASDAR_BOOK <- "https://www.asdar-book.org"
   fn <- paste(i, "mod.R", sep="_")
   download.file(paste(ASDAR_BOOK, "book2ed", fn, sep = "/"), fn)
   da <- paste(i, "bundle.zip", sep = "_")
