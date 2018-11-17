@@ -2,7 +2,8 @@ title: Applied Spatial Data Analysis with R
 logo: /assets/img/cover-2ed.jpg
 description: Web site with book resources (data, scripts)
 show_downloads: true
-google_analytics:
+google_analytics: UA—2002081-2
 theme: jekyll-theme-minimal
 gems:
 - jekyll-seo-tag
+# Google Analytics
