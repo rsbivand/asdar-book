@@ -24,8 +24,9 @@ library(rgdal)
 ###################################################
 ### chunk number 10: 
 ###################################################
-EPSG <- make_EPSG()
-EPSG[grep("^# ED50$", EPSG$note),]
+# From PROJ 6.0.0, EPSG data stored in an SQLite database without proj4 strings
+EPSG <- try(make_EPSG())
+if (class(EPSG) != "try-error") EPSG[grep("^# ED50$", EPSG$note),]
 
 
 ###################################################
@@ -59,7 +60,7 @@ gzAzimuth(coordinates(IJ.ED50), coordinates(res))
 ###################################################
 ### chunk number 14: 
 ###################################################
-EPSG[grep("Atlas", EPSG$note), 1:2]
+if (class(EPSG) != "try-error") EPSG[grep("Atlas", EPSG$note), 1:2]
 
 
 ###################################################
