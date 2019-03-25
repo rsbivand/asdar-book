@@ -69,6 +69,8 @@ Page 245: Minor change in prediction variance values following the change to BLA
 
 ## lat
 
+From **spdep** 1.1-1, functions for fitting models are moved to the new package **spatialreg**, and changes are made to adapt. Present changes pass most deprecated **spdep** functions through to **spatialreg**.
+
 Page 282, Chunk 45: boot should be loaded explicitly.
 
 Page 285, The sentence introducing local Moran's I is potentially misleading; the formula is given after Lloyd (2007) p. 67, eq. 4.16, originally from Anselin (1995) p. 99, eq. 12 [Anselin, L. 1995. Local indicators of spatial association, Geographical Analysis, 27, 93-115], and Getis and Ord (1996) p. 267-268, eq. 14.4 [Getis, A. and Ord, J. K. 1996 Local spatial statistics: an overview. In P. Longley and M. Batty (eds) Spatial analysis: modelling in a GIS environment (Cambridge: Geoinformation International), 261-277]. The "sum" referred to is the sum of the calculated values of local Moran's divided by the sum of the weights [for example using Szero() on the listw object].

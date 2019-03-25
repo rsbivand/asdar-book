@@ -60,6 +60,8 @@ Page 269: The sentence introducing local Moran's I is potentially misleading; th
 ## lat2
 Page 297, 299: For mgcv version 1.5-2 only, Spatial\*DataFrame objects cannot be used as values for the gam() data= argument - coerce to data.frame first.
 
+From **spdep** 1.1-1, functions for fitting models are moved to the new package **spatialreg**, and changes are made to adapt. Present changes pass most deprecated **spdep** functions through to **spatialreg**.
+
 ## dismap
 ## after
 Page 344: The version of the splancs package used for building the book was 2.01-24, not 2.01-23 - this affects Figure 7.10 on page 177, which cannot be reproduced with the earlier version.

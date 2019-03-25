@@ -496,7 +496,7 @@ lm.morantest(nylmw, NYlistw)
 ###################################################
 ### code chunk number 72: lat.Rnw:2423-2425
 ###################################################
-nysarw<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME , data=NY8, listw=NYlistw, weights=POP8)
+nysarw <- spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, listw=NYlistw, weights=POP8)
 summary(nysarw)
 
 
@@ -528,7 +528,7 @@ nylam1 <- c(nycar$lambda)
 ###################################################
 ### code chunk number 76: lat.Rnw:2548-2551
 ###################################################
-nycarw<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="CAR",
+nycarw <- spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="CAR",
    listw=NYlistw, weights=POP8)
 summary(nycarw)
 
@@ -536,7 +536,7 @@ summary(nycarw)
 ###################################################
 ### code chunk number 77: lat.Rnw:2624-2626
 ###################################################
-nysarwM<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
+nysarwM<-spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
    listw=NYlistw, weights=POP8, method="Matrix")
 
 
@@ -552,7 +552,7 @@ summary(nysarwM)
 1/range(eigenw(NYlistw))
 nysar_ll<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
    listw=NYlistw, llprof=100)
-nysarw_ll<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
+nysarw_ll<-spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
    listw=NYlistw, weights=POP8, llprof=100)
 
 
@@ -572,7 +572,7 @@ legend("bottom", legend=c("weighted SAR", "SAR"), lty=c(1,2), lwd=2, bty="n")
 ###################################################
 ### code chunk number 81: lat.Rnw:2711-2714
 ###################################################
-nysmaw<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SMA",
+nysmaw<-spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SMA",
    listw=NYlistw, weights=POP8)
 summary(nysmaw)
 
@@ -628,7 +628,8 @@ c(McRes$beta, rho=McRes$rho, sig2=McRes$sig2)
 ###################################################
 nymix <- lagsarlm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, listw=NYlistwW, type="mixed")
 nymix
-anova(nymix, nylag)
+#anova(nymix, nylag)
+LR.sarlm(nymix, nylag)
 
 
 ###################################################

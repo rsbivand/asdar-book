@@ -101,7 +101,7 @@ lm.morantest(nylmw, NYlistw)
 ###################################################
 ### chunk number 18: 
 ###################################################
-nysarw<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME , data=NY8, listw=NYlistw, weights=POP8)
+nysarw<-spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME , data=NY8, listw=NYlistw, weights=POP8)
 summary(nysarw)
 
 
@@ -116,7 +116,7 @@ summary(nycar)
 ###################################################
 ### chunk number 21: 
 ###################################################
-nycarw<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="CAR",
+nycarw<-spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="CAR",
    listw=NYlistw, weights=POP8)
 summary(nycarw)
 
@@ -124,7 +124,7 @@ summary(nycarw)
 ###################################################
 ### chunk number 22: 
 ###################################################
-nysarwM<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
+nysarwM<-spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
    listw=NYlistw, weights=POP8, method="Matrix")
 
 
@@ -140,7 +140,7 @@ summary(nysarwM)
 1/range(eigenw(NYlistw))
 nysar_ll<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
    listw=NYlistw, llprof=100)
-nysarw_ll<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
+nysarw_ll<-spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SAR",
    listw=NYlistw, weights=POP8, llprof=100)
 
 
@@ -160,7 +160,7 @@ legend("bottom", legend=c("weighted SAR", "SAR"), lty=c(1,2), lwd=2, bty="n")
 ###################################################
 ### chunk number 26: 
 ###################################################
-nysmaw<-spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SMA",
+nysmaw<-spatialreg::spautolm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, family="SMA",
    listw=NYlistw, weights=POP8)
 summary(nysmaw)
 
@@ -227,8 +227,8 @@ bptest.sarlm(nylag)
 ###################################################
 nymix <- lagsarlm(Z~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, listw=NYlistwW, type="mixed")
 nymix
-anova(nymix, nylag)
-
+#anova(nymix, nylag)
+LR.sarlm(nymix, nylag)
 
 ###################################################
 ### chunk number 36: 
@@ -378,7 +378,7 @@ anova(nylm, nylmSFE)
 # a different place, though the order of the first chosen eigenvectos
 # stays the same
 set.seed(111)
-nyME <- ME(Cases~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, offset=log(POP8), family="poisson", listw=NYlistwW, alpha=0.4)
+nyME <- spatialreg::ME(Cases~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, offset=log(POP8), family="poisson", listw=NYlistwW, alpha=0.4)
 
 
 ###################################################
