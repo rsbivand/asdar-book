@@ -37,6 +37,8 @@ the code chunk at the foot of the page should read:
 ```
 
 ## cm2
+Page 147: R >= 3.6 uses a different default sampler giving for the same seed 991 instead of 979 and 999 for 1003 output counts. The tabulation on page 148 is also changed, with max. grid_regular becoming 77.
+
 Section 5.3.3, foot of page 147, code chunk 72, tabulation of five number summaries. Because over() now returns a data frame, the coordinates method fails for extracting the number of data objects returned; corrected in cm2_mod.R.
 
 Page 143, Chunk 57: maptools should be loaded explicitly.
@@ -67,17 +69,25 @@ Pages 244-245, section 8.5.10, chunk 85: Starting with gstat 1.1-0, the option t
 
 Page 245: Minor change in prediction variance values following the change to BLAS/LAPACK from Meschach linear algebra functions in gstat 1.1-0.
 
+Page 247-248, sections 8.7.1/2: changes in sample() from R >= 3.6.0 change the model training and validation sets and R2 measure; the cross-validation score summary is also changed.
+
 ## lat
 
 From **spdep** 1.1-1, functions for fitting models are moved to the new package **spatialreg**, and changes are made to adapt. Present changes pass most deprecated **spdep** functions through to **spatialreg**.
 
+Page 281-2: Monte Carlo test output affected by change in sample() for R >= 3.6.
+
 Page 282, Chunk 45: boot should be loaded explicitly.
+
+Page 283: Monte Carlo test output affected by change in sample() for R >= 3.6, and by changes to the calculation of the measure in February 2016.
 
 Page 285, The sentence introducing local Moran's I is potentially misleading; the formula is given after Lloyd (2007) p. 67, eq. 4.16, originally from Anselin (1995) p. 99, eq. 12 [Anselin, L. 1995. Local indicators of spatial association, Geographical Analysis, 27, 93-115], and Getis and Ord (1996) p. 267-268, eq. 14.4 [Getis, A. and Ord, J. K. 1996 Local spatial statistics: an overview. In P. Longley and M. Batty (eds) Spatial analysis: modelling in a GIS environment (Cambridge: Geoinformation International), 261-277]. The "sum" referred to is the sum of the calculated values of local Moran's divided by the sum of the weights [for example using Szero() on the listw object].
 
 Page 303, Chunk 81: After updating Matrix from 1.0-14 to 1.1-0, the value of the numerical Hessian standard error of lambda changes slightly.
 
 Page 309, Chunk 90: coda should be loaded explicitly.
+
+Page 313: Bootstrap output affected by change in sample() for R >= 3.6.
 
 ## dismap
 
