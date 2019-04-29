@@ -378,7 +378,7 @@ anova(nylm, nylmSFE)
 # a different place, though the order of the first chosen eigenvectos
 # stays the same
 set.seed(111)
-nyME <- spatialreg::ME(Cases~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, offset=log(POP8), family="poisson", listw=NYlistwW, alpha=0.4)
+nyME <- spatialreg::ME(Cases~PEXPOSURE+PCTAGE65P+PCTOWNHOME, data=NY8, offset=log(POP8), family="poisson", listw=NYlistwW, alpha=0.44)
 
 
 ###################################################
