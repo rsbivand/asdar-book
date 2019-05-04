@@ -321,6 +321,7 @@ names(sohoSG) <- c("snowcost_broad", "snowcost_not_broad")
 ### chunk number 57: 
 ###################################################
 deaths <- readOGR(".", "deaths")
+proj4string(sohoSG) <- CRS(proj4string(deaths))
 if (packageVersion("sp") < "1.1.0") {
   o <- overlay(sohoSG, deaths)
 } else {
