@@ -67,7 +67,7 @@ print(xyplot(y~x|DATASET, data=dpp, pch=19, aspect=1))
 ### code chunk number 15: sppa.Rnw:401-406
 ###################################################
 library(rgdal)
-spasthma <- readOGR("spasthma.shp", "spasthma")
+spasthma <- readOGR("spasthma.shp", "spasthma", stringsAsFactors=TRUE)
 spbdry <- readOGR("spbdry.shp", "spbdry")
 spsrc <- readOGR("spsrc.shp", "spsrc")
 sproads <- readOGR("sproads.shp", "sproads")

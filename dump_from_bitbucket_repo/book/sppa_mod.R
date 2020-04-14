@@ -127,7 +127,7 @@ unzip(zipfile="north_derby_asthma.zip")
 ### chunk number 15: 
 ###################################################
 library(rgdal)
-spasthma <- readOGR(".", "spasthma")
+spasthma <- readOGR(".", "spasthma", stringsAsFactors=TRUE)
 spbdry <- readOGR(".", "spbdry")
 spsrc <- readOGR(".", "spsrc")
 sproads <- readOGR(".", "sproads")
