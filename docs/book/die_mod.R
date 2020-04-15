@@ -325,6 +325,7 @@ proj4string(sohoSG) <- CRS(proj4string(deaths))
 if (packageVersion("sp") < "1.1.0") {
   o <- overlay(sohoSG, deaths)
 } else {
+  slot(sohoSG, "proj4string") <- slot(deaths, "proj4string")
   o <- over(deaths, sohoSG)
 }
 deaths <- spCbind(deaths, as(o, "data.frame"))
