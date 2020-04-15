@@ -1,0 +1,2 @@
+Sys.setenv(ASDAR_DOWNLOAD="https://asdar-book.org/RC1/datasets")
+
