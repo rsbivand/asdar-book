@@ -552,7 +552,8 @@ corD
 ### chunk number 79: 
 ###################################################
 oopar <- par(mfrow=c(1,2))
-msp <- moran.plot(NY8$Cases, listw=nb2listw(NY_nb, style="C"), quiet=TRUE)
+if (packageVersion("spdep") > "1.1.4" ) msp <- moran.plot(NY8$Cases, listw=nb2listw(NY_nb, style="C"), quiet=TRUE, return_df=FALSE)
+else msp <- moran.plot(NY8$Cases, listw=nb2listw(NY_nb, style="C"), quiet=TRUE)
 title("Moran scatterplot")
 infl <- apply(msp$is.inf, 1, any)
 x <- NY8$Cases
